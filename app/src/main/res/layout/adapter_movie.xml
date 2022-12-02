@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
+<!--Mengaur radius dan elevasi pada card-->
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,12 +12,14 @@
     app:cardCornerRadius="8dp"
     app:cardElevation="8dp">
 
+<!--    Menambahkan warna background dengan menggunakan  android:background="@color/colorWhite-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorWhite">
 
 
+<!--        Mengatur warna text dan style menjadi tebal-->
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvTitle"
             android:layout_width="0dp"
@@ -45,7 +48,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:background="@tools:sample/backgrounds/scenic" />
 
-
+        <!--Memberikan warna teks dan mengatur ukuran, serta mengatur marginnya-->
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/rvRating"
             android:textColor="@color/colorBrown"
@@ -58,6 +61,7 @@
             app:layout_constraintTop_toBottomOf="@id/tvTitle"
             tools:text="@tools:sample/full_names" />
 
+        <!--Memberikan warna teks dan mengatur ukuran, serta mengatur marginnya-->
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/rvYear"
             android:textColor="@color/colorBrown"
